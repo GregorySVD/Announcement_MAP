@@ -1,0 +1,10 @@
+How to connect BE to FE:
+
+1. Create folder types in [BE];
+2. Install dependencies:
+    npm i -D customize-cra react-app-rewire-alias;
+3. Create tsconfig.paths.json;
+4. Create : config-overrides.js;
+5. Change scripts from:
+"start": "react-scripts start", => "start": "react-app-rewired start"
+6. Add to ts.config line:   "extends": "./tsconfig.paths.json",
